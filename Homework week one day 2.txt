@@ -1,0 +1,67 @@
+# Polymorphism & Composition Homework - Quiz
+
+# Polymorphism
+
+1. What does the ___word___ 'polymorphism' mean?
+ploy Polymorphism is one of the 4 pillars of object orientation, it is implemented in java with the use of interface, abstract class, method overloading and method overriding.
+
+2. What does it mean when we apply polymorphism to OO design? Give a simple Java example.
+an abstract class can dictate how constructs and variables are passed onto sub classes. For example, an abstract class 'Farm Animal' may have a variable called 'enclosure': ie a parent class and multiple child classes.
+
+public abstract class Farm Animal{ <----parent class
+  public string enclosureDescription(){
+    return "enclosure for farm animal";
+  }
+}
+
+public class pig extends farm animal{ <--- child class
+  public string enclosureDescription(){
+    return "pig lives in a stye"
+  }
+}
+
+public class cow extends farm animal{ <---- child class
+  public string enclosureDescription(){
+    return "cow lives in a field"
+  }
+}
+
+3. What can we use to implement polymorphism in Java?
+Polymorphism is implemented through method overloading, where there are multiple methods in a classes which have the same name but parameters, types etc are different.
+
+4. How many 'forms' can an object take when using polymorphism?
+unlimited forms
+5. Give an example of when you could use polymorphism.
+
+public abstract class Farm Animal{ <----parent class
+  public string enclosureDescription(){
+    return "enclosure for farm animal";
+  }
+}
+
+public class pig extends farm animal{ <--- child class
+  public string enclosureDescription(){
+    return "pig lives in a stye"
+  }
+}
+
+public class cow extends farm animal{ <---- child class
+  public string enclosureDescription(){
+    return "cow lives in a field"
+  }
+}
+
+
+
+# Composition
+
+6. What do we mean by 'composition' in reference to object-oriented programming?
+composition in java is the design technique used to implement 'has-a' relationships in classes (for example a car 'has-a' engine), it is implemented using instance variables.
+7. When would you use composition? Provide a simple example in Java.
+car has a engine, number of wheels, and colour.
+engine could have its own class with instance variables for example engine size, hp, pistons. A car is composed of an engine.
+8. What is/are the advantage(s) of using composition?
+You can control access to different variables and methods.
+
+9. What happens to the behaviours when the object composed of them is destroyed?
+The only difference between Aggregation and Composition is that in Composition the component object only exists inside the composite object and no where else in the program. So when the composite object is destroyed, the given component object is also destroyed, and can not exist anywhere else
